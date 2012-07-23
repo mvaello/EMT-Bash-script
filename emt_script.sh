@@ -34,6 +34,6 @@ fi
 # la línea y la parada de bus así como la plataforma que recibe los datos, en este caso Java. 
 salida=$(curl -s http://195.76.144.242:80/services/tespera2.asp -d linea=$LINEA -d parada=$PARADA -d movil=JAVA)
 
-# Para hacerlo compatible con el comando sey de Mac, se ha modificado el stream original
+# Para hacerlo compatible con el comando say de Mac, se ha modificado el stream original
 salida=$(echo $salida | sed 's .\{1\}  ')
 echo $salida
