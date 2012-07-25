@@ -3,8 +3,8 @@
 USO="Uso: $0 [linea] [cod. parada]"
 
 # Si no se pasa ningún parámetro, se muestra el uso del comando
-# Si el número de parámetro es cero (zero -z)
-if [ -z $# ]; then 
+# Si el número de parámetro es cero (menos que uno)
+if [ $# -lt 1 ]; then 
     echo "Error: No se ha introducido ningún parámetro"
 	echo $USO
 	exit 1
